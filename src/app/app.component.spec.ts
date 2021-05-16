@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'swapbounty'`, () => {
+  it(`should have as title 'coinbattle-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('swapbounty');
+    expect(app.title).toEqual('coinbattle-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('swapbounty app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('coinbattle-app app is running!');
   });
 });
